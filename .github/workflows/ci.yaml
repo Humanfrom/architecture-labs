@@ -23,6 +23,7 @@ jobs:
         uses: docker/bake-action@v3
         with:
           load: true
+          version: v0.19.0
 
       - name: Backend test
         run: docker compose run backend-test
